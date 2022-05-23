@@ -4,7 +4,7 @@ A simple emoji search tool made with ReactJS.
 
 
 
-![23-24-22-002345.png](G:\react-emoji-search\build\23-24-22-002345.png)
+![demo](https://github.com/DanilPidhainyi/react-emoji-search/blob/main/build/23-24-22-002345.png)
 
 View it live: [React Emoji Search](https://danilpidhainyi.github.io/react-emoji-search/)
 

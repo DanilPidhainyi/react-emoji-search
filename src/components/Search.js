@@ -18,6 +18,7 @@ function Search(props) {
     props.onChange(e.target.value);
   }, delay);
 
+
   return (
     <input
       className="search"
@@ -29,7 +30,7 @@ function Search(props) {
 }
 
 Search.defaultValue = {
-  onChange: () => { }
+  onChange: () => {}
 }
 
 Search.propTypes = {

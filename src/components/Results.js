@@ -4,7 +4,10 @@ import Item from "./Item.js";
 import Clipboard from "clipboard";
 import "./Results.css";
 
-function Results({ emojiFiltered = [] }) {
+
+
+function Results({ emojiFiltered = [], isLine }) {
+  console.log(emojiFiltered)
   useEffect(() => {
     const clipboard = new Clipboard(".item");
     return () => {
@@ -12,18 +15,36 @@ function Results({ emojiFiltered = [] }) {
     };
   });
 
-  return (
-    <div className="results">
-      {emojiFiltered.length ? (
-        emojiFiltered
-          .slice(0, 100)
-          .map((emoji, index) => (
+  const lineItem = () => {
+    return emojiFiltered
+        .slice(0, 11)
+        .map((emoji, index) => (
             <Item id={index} key={index} symbol={emoji.symbol} keywords={emoji.keywords} />
-          ))
-      ) : (
-        <p className="no-result">No Results Found</p>
-      )}
-    </div>
+        ))
+  }
+
+  const fullItem = () => {
+    return emojiFiltered
+        .slice(0, 150)
+        .map((emoji, index) => (
+            <Item id={index} key={index} symbol={emoji.symbol} keywords={emoji.keywords} />
+        ))
+  }
+
+  return (
+      <div className={'results'}>
+        {
+          (emojiFiltered.length) ? (
+              isLine ? (
+                  lineItem()
+              ) : (
+                  fullItem()
+              )
+          ) : (
+            <p className="no-result">No Results Found</p>
+          )
+          }
+      </div>
   );
 }
 

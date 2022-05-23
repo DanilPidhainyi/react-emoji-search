@@ -4,15 +4,19 @@ import Search from "./Search.js";
 import Results from "./Results.js";
 import data from "../json/data.json";
 import "./Container.css";
+import ScrollToTopButton from "./ScrollToTopButton";
+import {emj} from "../utils/defaultData.js";
 
 function Container() {
   const [emojiData, setEmojiData] = useState([]);
-  const [newEmojiData, setNewEmojiData] = useState([]);
-  const [searchQuery, setSearchQuery] = useState("");
+  const [newEmojiData, setNewEmojiData] = useState(emj);
+  const [searchQuery, setSearchQuery] = useState("default");
 
   useEffect(() => {
     setEmojiData(data);
   }, []);
+
+  const [resultsIsLine, setResultIsLine] = useState(true)
 
   const onChange = useCallback((val) => {
     setSearchQuery(val.toLowerCase());
@@ -47,17 +51,21 @@ function Container() {
 
     setNewEmojiData(newEmojis);
   }, [setNewEmojiData, setSearchQuery, emojiData]);
+
+  let search = <Search onChange={onChange} />
+
   return (
     <div className="container">
-      <Header />
+      <Header resultsIsLine={resultsIsLine} setResultIsLine={setResultIsLine}/>
+      {resultsIsLine ? <></> : search}
       {!searchQuery ? (
           <p className="first-render">Type Keywords to Search</p>
       ) : (
-          <Results
-              emojiFiltered={searchQuery === "" ? emojiData : newEmojiData}
-          />
-      )}
-      <Search onChange={onChange} />
+          <Results isLine={resultsIsLine}
+                   emojiFiltered={searchQuery === "" ? emojiData : newEmojiData}
+          />)}
+      {resultsIsLine ? search : <></>}
+      <ScrollToTopButton />
     </div>
   );
 }

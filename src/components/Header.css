@@ -11,3 +11,10 @@
 .github {
   height: 30px;
 }
+
+.Bear_line {
+    position: relative;
+    display: flex;
+    top: 40px;
+    justify-content: space-between;
+}

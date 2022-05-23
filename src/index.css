@@ -26,8 +26,12 @@ input {
 
 
 .light {
-  --background-color: #61dafb;
-  --text-color-first: #000000;
+  /*--background-color: #7994a5;*/
+  /*--text-color-first: #EDDFC9;*/
+  /*--background-color: #98AEBC;*/
+  --bear-color: #AA5638;
+  --background-color: #EAEDF0;
+  --text-color-first: #000;
   --card-background-color: #ffffff;
   --card-shadow-color-top-left: #ffffff99;
   --card-shadow-color-bottom-right: #152b4711;
@@ -38,6 +42,7 @@ input {
 }
 
 .dark {
+  --bear-color: #3d2526;
   --background-color: #121212;
   --text-color-first: #b3b3b3;
   --card-background-color: #1d1d1d;

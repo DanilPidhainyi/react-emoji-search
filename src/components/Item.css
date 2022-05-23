@@ -22,14 +22,14 @@
 
 .item-copy{
   position: absolute;
+  top: 65px;
   background: #0077ff33;
   color: #0077ff;
   font-weight: 700;
   border-radius: 6px;
   font-size: 0.8em;
   padding: 6px;
-  bottom: 8px;
-  left: 8px;
+
   transition: opacity 0.3s;
   cursor: pointer;
 }

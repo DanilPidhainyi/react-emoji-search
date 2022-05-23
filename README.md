@@ -2,9 +2,11 @@
 
 A simple emoji search tool made with ReactJS.
 
-![Screenshot of web app](https://i.ibb.co/g4ZwTs6/9-A8-EBC50-F031-4401-B672-5-DAB70-C37832.jpg)
 
-View it live: https://react-emoji-search.braydentw.vercel.app
+
+![23-24-22-002345.png](G:\react-emoji-search\build\23-24-22-002345.png)
+
+View it live: [React Emoji Search](https://danilpidhainyi.github.io/react-emoji-search/)
 
 ---
 
@@ -15,7 +17,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 To use this tool in your own projects, start by cloning this repository.
 
 ```sh
-git clone https://github.com/BraydenTW/react-emoji-search
+git clone https://github.com/DanilPidhainyi/react-emoji-search
 ```
 
 Then once the folder is inside your code editor, install all the necessary packages.

@@ -2,7 +2,7 @@
   "name": "emoji_search",
   "description": "A simple emoji search tool made with ReactJS.",
   "version": "1.0.0",
-  "homepage": "https://danilpidhainyi.github.io",
+  "homepage": "https://danilpidhainyi.github.io/react-emoji-search/",
   "dependencies": {
     "-": "^0.0.1",
     "@testing-library/jest-dom": "^4.2.4",

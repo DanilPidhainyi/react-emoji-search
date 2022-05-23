@@ -1,11 +1,11 @@
 .item{
   position: relative;
-  width: 180px;
-  height: 180px;
+  width: 60px;
+  height: 60px;
   background: var(--card-background-color);
   margin: 15px;
   padding: 20px;
-  border-radius: 12px;
+  border-radius: 50%;
   box-shadow: -5px -5px 15px var(--card-shadow-color-top-left), 5px 5px 15px var(--card-shadow-color-bottom-right);
   display: flex;
   align-items: center;

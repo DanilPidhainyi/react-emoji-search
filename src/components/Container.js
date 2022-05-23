@@ -3,7 +3,6 @@ import Header from "./Header.js";
 import Search from "./Search.js";
 import Results from "./Results.js";
 import data from "../json/data.json";
-import ScrollToTopButton from "./ScrollToTopButton";
 import "./Container.css";
 
 function Container() {
@@ -51,15 +50,14 @@ function Container() {
   return (
     <div className="container">
       <Header />
-      <Search onChange={onChange} />
       {!searchQuery ? (
-        <p className="first-render">Type Keywords to Search</p>
+          <p className="first-render">Type Keywords to Search</p>
       ) : (
-        <Results
-          emojiFiltered={searchQuery === "" ? emojiData : newEmojiData}
-        />
+          <Results
+              emojiFiltered={searchQuery === "" ? emojiData : newEmojiData}
+          />
       )}
-      <ScrollToTopButton />
+      <Search onChange={onChange} />
     </div>
   );
 }

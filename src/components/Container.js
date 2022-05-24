@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import Header from "./Header.js";
 import Search from "./Search.js";
 import Results from "./Results.js";
-import data from "../json/data.json";
+import data from "../json/data2.json";
 import "./Container.css";
 import ScrollToTopButton from "./ScrollToTopButton";
 import {emj} from "../utils/defaultData.js";

@@ -7,7 +7,7 @@ const size = {
 
 export const numberOfElements = (width) => {
     if (width < size.tablet) {
-        return Math.floor((width * 0.89) / 87)
+        return Math.floor((width * 0.89) / 90)
     } else if (width < size.desktop) {
         return Math.floor((width * 0.7) / 85)
     } else {

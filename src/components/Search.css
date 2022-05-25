@@ -3,7 +3,7 @@
   padding: 14px 22px;
   width: 100%;
   max-width: 70vw;
-  margin: auto;
+  position: center;
   font-family: "Inter", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   outline: none;
   box-shadow: -5px -5px 15px var(--card-shadow-color-top-left), 5px 5px 15px var(--card-shadow-color-bottom-right);

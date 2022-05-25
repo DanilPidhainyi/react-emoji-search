@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import Item from "./Item.js";
 import Clipboard from "clipboard";
 import "./Results.css";
+import {numberOfElements} from './adaptability.js'
 import { useWindowSize } from 'usehooks-ts'
-
 
 function Results({ emojiFiltered = [], isLine }) {
   useEffect(() => {
@@ -14,20 +14,12 @@ function Results({ emojiFiltered = [], isLine }) {
     };
   });
 
-  const { width, height } = useWindowSize()
+  const {width} = useWindowSize()
 
   const lineItem = () => {
-    return <div style={
-      { display: 'flex',
-        justifyContent: 'space-between',
-        width: '70vw',
-        //maxWidth: '70vw',
-        margin: 'auto',
-        transition: '0.8s'
-      }
-    }>
+    return <div className={'lineImj'}>
       {emojiFiltered
-          .slice(0, Math.floor((width * 0.6) / 70))
+          .slice(0, numberOfElements(width))
           .map((emoji, index) => (
               <Item id={index} key={index} symbol={emoji.symbol} keywords={emoji.keywords} />
           ))}

@@ -12,3 +12,16 @@
   opacity: 0.7;
   text-align: center;
 }
+
+.lineImj {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: calc(70vw - 50px);
+  transition: 0.8s;
+}

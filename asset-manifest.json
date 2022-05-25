@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/react-emoji-search/static/css/main.04a002b3.css",
-    "main.js": "/react-emoji-search/static/js/main.5d8250ef.js",
+    "main.css": "/react-emoji-search/static/css/main.47bc4735.css",
+    "main.js": "/react-emoji-search/static/js/main.5b40f4f4.js",
     "static/media/moon.svg": "/react-emoji-search/static/media/moon.df836391c737d2f60f1509c39807a72a.svg",
     "static/media/sun.svg": "/react-emoji-search/static/media/sun.c76b5c401555b1f39db78844562b23f1.svg",
     "index.html": "/react-emoji-search/index.html",
     "static/media/up.svg": "/react-emoji-search/static/media/up.6ef09f18a6992d005b473ba7a01affce.svg",
-    "main.04a002b3.css.map": "/react-emoji-search/static/css/main.04a002b3.css.map",
-    "main.5d8250ef.js.map": "/react-emoji-search/static/js/main.5d8250ef.js.map"
+    "main.47bc4735.css.map": "/react-emoji-search/static/css/main.47bc4735.css.map",
+    "main.5b40f4f4.js.map": "/react-emoji-search/static/js/main.5b40f4f4.js.map"
   },
   "entrypoints": [
-    "static/css/main.04a002b3.css",
-    "static/js/main.5d8250ef.js"
+    "static/css/main.47bc4735.css",
+    "static/js/main.5b40f4f4.js"
   ]
 }

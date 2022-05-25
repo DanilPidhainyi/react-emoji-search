@@ -6,6 +6,7 @@ import data from "../json/data2.json";
 import "./Container.css";
 import ScrollToTopButton from "./ScrollToTopButton";
 import {emj} from "../utils/defaultData.js";
+import './adaptability.css'
 
 function Container() {
   const [emojiData, setEmojiData] = useState([]);

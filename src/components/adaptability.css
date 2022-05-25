@@ -1,0 +1,24 @@
+@media (max-width: 1200px) {
+    .item{
+        position: relative;
+        width: 55px;
+        height: 55px;
+    }
+
+}
+
+/*@media (max-width: 992px) {*/
+/*    .item{*/
+/*        position: relative;*/
+/*        width: 50px;*/
+/*        height: 50px;*/
+/*    }*/
+/*}*/
+
+/*@media (max-width: 767px) {*/
+/*    .item{*/
+/*        position: relative;*/
+/*        width: 40px;*/
+/*        height: 40px;*/
+/*    }*/
+/*}*/

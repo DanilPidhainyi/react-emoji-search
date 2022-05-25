@@ -51,6 +51,4 @@ Your app is ready to be deployed!
 
 ### Like my work?
 
-<a href="https://www.buymeacoffee.com/braydenw" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="210" ></a>
-
-Made by [@BraydenTW](https://github.com/braydentw)
+<a href="https://www.buymeacoffee.com/danylpidg" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="210" ></a>
